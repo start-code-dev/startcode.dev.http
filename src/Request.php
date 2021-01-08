@@ -41,7 +41,7 @@ class Request
 
     private function setRequestUuid() : self
     {
-        if (!$this->getHeader(Parameters::X_ND_UUID)) {
+        if (!$this->getHeader('X-ND-UUID')) {
             $_SERVER[self::HTTP_X_ND_UUID] = (string) Uuid::generate();
         }
 
