@@ -12,7 +12,7 @@ class Request
 
     protected array $_paramSources = array('_GET', '_POST');
     protected array $_params = array();
-    protected ?string $_rawBody;
+    protected ?string $_rawBody = null;
 
     public function __construct()
     {
